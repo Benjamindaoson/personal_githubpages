@@ -1,0 +1,33 @@
+{
+  "name": "aidigitaltextbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "docusaurus start site",
+    "build": "docusaurus build site",
+    "serve": "docusaurus serve site",
+    "generate": "tsx scripts/build-course-manifest.ts && tsx scripts/build-asset-index.ts && tsx scripts/build-rag-chunks.ts && tsx scripts/build-learning-graph.ts && tsx scripts/build-assessment-bank.ts",
+    "validate": "tsx scripts/validate-content.ts",
+    "test": "vitest run --passWithNoTests",
+    "check": "npm run generate && npm run validate && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "@mdx-js/react": "^3.0.1",
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
