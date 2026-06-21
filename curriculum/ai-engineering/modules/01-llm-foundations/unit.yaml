@@ -1,0 +1,21 @@
+id: llm-foundations
+title: 大模型工程基础
+module: 01-llm-foundations
+audience:
+  - developer-student
+  - teacher
+level: beginner
+prerequisites:
+  - basic-programming
+learning_objectives:
+  - 解释 token、上下文窗口和模型输出之间的关系
+  - 编写一个最小的大模型调用实验
+  - 识别提示词实验中的常见失败模式
+assets:
+  - llm-context-window-diagram
+assessments:
+  quiz: quiz.yaml
+  rubric: rubric.yaml
+agent_use:
+  retrievable: true
+  chunk_strategy: concept-lab-rubric

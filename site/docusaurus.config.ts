@@ -40,8 +40,8 @@ const config: Config = {
       title: "AI Digital Textbook",
       items: [
         { to: "/courses/ai-engineering/intro", label: "学习路径", position: "left" },
-        { to: "/courses/ai-engineering/modules/01-llm-foundations/lesson", label: "课程单元", position: "left" },
-        { to: "/courses/ai-engineering/modules/01-llm-foundations/teaching-guide", label: "教师资源", position: "left" }
+        { to: "/courses/ai-engineering/modules/llm-foundations/lesson", label: "课程单元", position: "left" },
+        { to: "/courses/ai-engineering/modules/llm-foundations/teaching-guide", label: "教师资源", position: "left" }
       ]
     },
     footer: {

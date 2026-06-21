@@ -1,0 +1,13 @@
+id: ai-engineering
+title: AI Engineering Curriculum
+language: zh-CN
+audiences:
+  - developer-student
+  - teacher
+modules:
+  - id: 01-llm-foundations
+    title: 大模型基础
+  - id: 02-rag
+    title: RAG
+  - id: 03-agents
+    title: Agent

@@ -1,0 +1,8 @@
+id: llm-foundations-quiz
+questions:
+  - id: q1
+    type: short-answer
+    prompt: 为什么上下文窗口不等同于长期记忆？
+    expected_points:
+      - 上下文窗口只影响当前调用可见信息
+      - 长期记忆需要外部存储或显式状态管理

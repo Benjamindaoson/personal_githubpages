@@ -1,7 +1,6 @@
 {
   "name": "aidigitaltextbook",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "docusaurus start site",
     "build": "docusaurus build site",

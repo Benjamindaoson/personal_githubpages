@@ -1,0 +1,14 @@
+id: llm-foundations-rubric
+criteria:
+  - id: prompt-clarity
+    title: 提示词清晰度
+    levels:
+      excellent: 任务、约束、输出格式都清楚
+      proficient: 任务清楚但约束不完整
+      developing: 任务模糊或输出格式缺失
+  - id: comparison-quality
+    title: 对比分析质量
+    levels:
+      excellent: 能比较准确性、稳定性和可解析性
+      proficient: 能比较两个质量维度
+      developing: 只描述输出，没有分析
