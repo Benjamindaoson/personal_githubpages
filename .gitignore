@@ -6,5 +6,6 @@ build/
 .superpowers/
 site/.docusaurus/
 site/build/
+site/static/admin/config.yml
 .worktrees/
 *.log

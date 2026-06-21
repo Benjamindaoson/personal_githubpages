@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "docusaurus start site",
-    "build": "docusaurus build site",
+    "generate:admin": "tsx scripts/build-admin-config.ts",
+    "build": "npm run generate:admin && docusaurus build site",
     "serve": "docusaurus serve site",
     "generate": "tsx scripts/build-course-manifest.ts && tsx scripts/build-asset-index.ts && tsx scripts/build-rag-chunks.ts && tsx scripts/build-learning-graph.ts && tsx scripts/build-assessment-bank.ts",
     "validate": "tsx scripts/validate-content.ts",
