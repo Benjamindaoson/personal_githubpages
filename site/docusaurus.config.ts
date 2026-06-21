@@ -14,7 +14,12 @@ const config: Config = {
   organizationName: owner,
   projectName,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+      onBrokenMarkdownImages: "throw"
+    }
+  },
   i18n: {
     defaultLocale: "zh-CN",
     locales: ["zh-CN"]
