@@ -1,0 +1,28 @@
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #115e59;
+  --ifm-color-primary-darker: #134e4a;
+  --ifm-color-primary-light: #14b8a6;
+  --ifm-code-font-size: 92%;
+  --ifm-border-radius: 6px;
+}
+
+.hero {
+  background: #101828;
+  color: #ffffff;
+}
+
+.teacher-note,
+.checkpoint {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #ffffff;
+}
+
+.teacher-note strong,
+.checkpoint strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
