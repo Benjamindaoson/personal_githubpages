@@ -1,0 +1,99 @@
+{
+  "id": "ai-engineering",
+  "title": "AI Engineering Curriculum",
+  "language": "zh-CN",
+  "audiences": [
+    "developer-student",
+    "teacher"
+  ],
+  "modules": [
+    {
+      "id": "01-llm-foundations",
+      "title": "大模型基础"
+    },
+    {
+      "id": "02-rag",
+      "title": "RAG"
+    },
+    {
+      "id": "03-agents",
+      "title": "Agent"
+    }
+  ],
+  "units": [
+    {
+      "id": "llm-foundations",
+      "title": "大模型工程基础",
+      "module": "01-llm-foundations",
+      "audience": [
+        "developer-student",
+        "teacher"
+      ],
+      "level": "beginner",
+      "prerequisites": [
+        "basic-programming"
+      ],
+      "learning_objectives": [
+        "解释 token、上下文窗口和模型输出之间的关系",
+        "编写一个最小的大模型调用实验",
+        "识别提示词实验中的常见失败模式"
+      ],
+      "assets": [
+        "llm-context-window-diagram"
+      ],
+      "assessments": {
+        "quiz": "quiz.yaml",
+        "rubric": "rubric.yaml"
+      },
+      "agent_use": {
+        "retrievable": true,
+        "chunk_strategy": "concept-lab-rubric"
+      }
+    },
+    {
+      "id": "rag-foundations",
+      "title": "RAG 入门",
+      "module": "02-rag",
+      "audience": [
+        "developer-student",
+        "teacher"
+      ],
+      "level": "intermediate",
+      "prerequisites": [
+        "llm-foundations"
+      ],
+      "learning_objectives": [
+        "解释 RAG 中检索、上下文拼接和生成的职责边界",
+        "识别引用质量和幻觉风险的基本评测维度"
+      ],
+      "assets": [],
+      "agent_use": {
+        "retrievable": true,
+        "chunk_strategy": "concept-failure-mode"
+      }
+    },
+    {
+      "id": "agent-foundations",
+      "title": "Agent 入门",
+      "module": "03-agents",
+      "audience": [
+        "developer-student",
+        "teacher"
+      ],
+      "level": "intermediate",
+      "prerequisites": [
+        "llm-foundations",
+        "rag-foundations"
+      ],
+      "learning_objectives": [
+        "解释 Agent 的目标、工具、状态和执行边界",
+        "区分普通聊天机器人和工具调用型 Agent"
+      ],
+      "assets": [],
+      "agent_use": {
+        "retrievable": true,
+        "chunk_strategy": "concept-tool-boundary"
+      }
+    }
+  ]
+}
