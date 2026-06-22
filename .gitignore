@@ -1,6 +1,7 @@
 node_modules/
 .docusaurus/
 build/
+generated/
 .env
 .env.*
 .superpowers/
@@ -8,4 +9,5 @@ site/.docusaurus/
 site/build/
 site/static/admin/config.yml
 .worktrees/
+upload-tree*.json
 *.log
