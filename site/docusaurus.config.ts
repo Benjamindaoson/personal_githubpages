@@ -44,9 +44,11 @@ const config: Config = {
     navbar: {
       title: "AI Digital Textbook",
       items: [
-        { to: "/courses/ai-engineering/intro", label: "学习路径", position: "left" },
-        { to: "/courses/ai-engineering/modules/llm-foundations/lesson", label: "课程单元", position: "left" },
-        { to: "/courses/ai-engineering/modules/llm-foundations/teaching-guide", label: "教师资源", position: "left" }
+        { to: "/", label: "首页", position: "left" },
+        { to: "/roadmap", label: "路线图", position: "left" },
+        { to: "/tasks", label: "任务库", position: "left" },
+        { to: "/courses/ai-engineering/intro", label: "课程", position: "left" },
+        { to: "/admin", label: "上传后台", position: "right" }
       ]
     },
     footer: {

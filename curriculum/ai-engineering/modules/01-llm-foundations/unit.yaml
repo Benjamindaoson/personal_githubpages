@@ -5,6 +5,22 @@ audience:
   - developer-student
   - teacher
 level: beginner
+status: ready
+estimated_time: 3-4 hours
+updated: "2026-06-22"
+product:
+  stage: foundation
+  formats:
+    - lesson
+    - python-lab
+    - js-lab
+    - project
+    - teacher-guide
+    - quiz
+    - rubric
+    - visual
+  primary_cta: /courses/ai-engineering/modules/llm-foundations/lesson
+  secondary_cta: /tasks
 prerequisites:
   - basic-programming
 learning_objectives:

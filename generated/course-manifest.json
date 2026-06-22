@@ -30,6 +30,24 @@
         "teacher"
       ],
       "level": "beginner",
+      "status": "ready",
+      "estimated_time": "3-4 hours",
+      "updated": "2026-06-22",
+      "product": {
+        "stage": "foundation",
+        "formats": [
+          "lesson",
+          "python-lab",
+          "js-lab",
+          "project",
+          "teacher-guide",
+          "quiz",
+          "rubric",
+          "visual"
+        ],
+        "primary_cta": "/courses/ai-engineering/modules/llm-foundations/lesson",
+        "secondary_cta": "/tasks"
+      },
       "prerequisites": [
         "basic-programming"
       ],
@@ -59,6 +77,20 @@
         "teacher"
       ],
       "level": "intermediate",
+      "status": "ready",
+      "estimated_time": "4-5 hours",
+      "updated": "2026-06-22",
+      "product": {
+        "stage": "builder",
+        "formats": [
+          "lesson",
+          "project",
+          "visual",
+          "teacher-guide"
+        ],
+        "primary_cta": "/courses/ai-engineering/modules/rag/lesson",
+        "secondary_cta": "/tasks"
+      },
       "prerequisites": [
         "llm-foundations"
       ],
@@ -81,6 +113,20 @@
         "teacher"
       ],
       "level": "intermediate",
+      "status": "updating",
+      "estimated_time": "4-6 hours",
+      "updated": "2026-06-22",
+      "product": {
+        "stage": "builder",
+        "formats": [
+          "lesson",
+          "project",
+          "visual",
+          "teacher-guide"
+        ],
+        "primary_cta": "/courses/ai-engineering/modules/agents/lesson",
+        "secondary_cta": "/tasks"
+      },
       "prerequisites": [
         "llm-foundations",
         "rag-foundations"

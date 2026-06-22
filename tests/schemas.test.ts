@@ -29,6 +29,31 @@ describe("curriculum schemas", () => {
     ).toThrow();
   });
 
+  it("accepts unit product template metadata", () => {
+    const parsed = UnitSchema.parse({
+      id: "llm-foundations",
+      title: "Large Model Foundations",
+      module: "01-llm-foundations",
+      audience: ["developer-student", "teacher"],
+      level: "beginner",
+      status: "ready",
+      estimated_time: "3-4 hours",
+      updated: "2026-06-22",
+      product: {
+        stage: "foundation",
+        formats: ["lesson", "python-lab", "js-lab", "project", "teacher-guide"],
+        primary_cta: "/courses/ai-engineering/modules/llm-foundations/lesson",
+        secondary_cta: "/tasks"
+      },
+      prerequisites: ["Python basics"],
+      learning_objectives: ["Explain context windows"],
+      assets: [],
+      agent_use: { retrievable: true, chunk_strategy: "concept" }
+    });
+
+    expect(parsed.product.formats).toContain("python-lab");
+  });
+
   it("requires asset alt text for machine use", () => {
     expect(() =>
       AssetSchema.parse({
