@@ -1,0 +1,16 @@
+assets:
+  - id: llm-context-window-diagram
+    type: diagram
+    format: mermaid
+    title: Context Window Mental Model
+    source: assets/diagrams/llm-context-window.mmd
+    pedagogical_role: mental-model
+    license: original
+    presentation:
+      embed: true
+      downloadable: true
+    machine:
+      rag_index:
+        include: true
+        extraction: alt_text_plus_caption
+      alt_text: Shows a prompt, context examples, and model output inside a bounded context window.

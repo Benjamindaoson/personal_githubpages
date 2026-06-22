@@ -1,0 +1,25 @@
+---
+title: 大模型工程基础
+---
+
+import TeacherNote from '@site/src/components/TeacherNote';
+import Checkpoint from '@site/src/components/Checkpoint';
+
+# 大模型工程基础
+
+大模型应用工程的核心不是“把问题丢给模型”，而是设计输入、约束输出、管理上下文，并持续评测结果质量。
+
+## 核心概念
+
+- Token：模型处理文本的基本单位。
+- Context window：模型一次调用可以接收和参考的信息范围。
+- Prompt：给模型的任务、约束、示例和输出格式。
+- Structured output：让模型返回可被程序稳定解析的结构化结果。
+
+<Checkpoint>
+用自己的话解释：为什么上下文窗口不是“模型记忆”？
+</Checkpoint>
+
+<TeacherNote>
+课堂上不要先讲复杂 Agent。先让学生看到同一个问题在不同提示词和上下文下会产生不同质量的输出。
+</TeacherNote>

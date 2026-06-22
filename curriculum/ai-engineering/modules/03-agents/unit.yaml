@@ -1,0 +1,16 @@
+id: agent-foundations
+title: Agent 入门
+module: 03-agents
+audience:
+  - developer-student
+  - teacher
+level: intermediate
+prerequisites:
+  - llm-foundations
+  - rag-foundations
+learning_objectives:
+  - 解释 Agent 的目标、工具、状态和执行边界
+  - 区分普通聊天机器人和工具调用型 Agent
+agent_use:
+  retrievable: true
+  chunk_strategy: concept-tool-boundary

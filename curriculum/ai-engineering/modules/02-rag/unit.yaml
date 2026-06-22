@@ -1,0 +1,15 @@
+id: rag-foundations
+title: RAG 入门
+module: 02-rag
+audience:
+  - developer-student
+  - teacher
+level: intermediate
+prerequisites:
+  - llm-foundations
+learning_objectives:
+  - 解释 RAG 中检索、上下文拼接和生成的职责边界
+  - 识别引用质量和幻觉风险的基本评测维度
+agent_use:
+  retrievable: true
+  chunk_strategy: concept-failure-mode
