@@ -21,6 +21,19 @@ export const UnitSchema = z.object({
   module: z.string().min(1),
   audience: z.array(AudienceSchema).min(1),
   level: z.enum(["beginner", "intermediate", "advanced"]),
+  status: z.enum(["draft", "ready", "updating"]),
+  estimated_time: z.string().min(1),
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  product: z.object({
+    stage: z.enum(["foundation", "builder", "capstone"]),
+    formats: z
+      .array(
+        z.enum(["lesson", "python-lab", "js-lab", "project", "teacher-guide", "quiz", "rubric", "visual"])
+      )
+      .min(1),
+    primary_cta: z.string().min(1),
+    secondary_cta: z.string().min(1)
+  }),
   prerequisites: z.array(z.string()),
   learning_objectives: z.array(z.string()).min(1),
   assets: z.array(z.string()).default([]),

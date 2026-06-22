@@ -4,8 +4,23 @@ title: 大模型工程基础
 
 import TeacherNote from '@site/src/components/TeacherNote';
 import Checkpoint from '@site/src/components/Checkpoint';
+import { CourseUnitHeader } from '@site/src/components/LearningProduct';
 
-# 大模型工程基础
+<CourseUnitHeader
+  eyebrow="Foundation"
+  title="大模型工程基础"
+  status="已上线"
+  estimatedTime="3-4 hours"
+  updated="2026-06-22"
+  outcomes={[
+    "解释 token、上下文窗口和模型输出之间的关系",
+    "完成 Python/JS 的最小模型调用实验",
+    "识别提示词实验中的常见失败模式"
+  ]}
+  formats={["概念课", "Python 实验", "JS 实验", "项目", "教师指南", "测验", "Rubric", "图"]}
+  primaryHref="/roadmap"
+  secondaryHref="/tasks"
+/>
 
 大模型应用工程的核心不是“把问题丢给模型”，而是设计输入、约束输出、管理上下文，并持续评测结果质量。
 

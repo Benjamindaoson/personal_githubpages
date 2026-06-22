@@ -2,10 +2,32 @@
 title: Agent 入门
 ---
 
-# Agent 入门
+import { CourseUnitHeader } from '@site/src/components/LearningProduct';
+
+<CourseUnitHeader
+  eyebrow="Builder"
+  title="Agent 入门"
+  status="持续更新"
+  estimatedTime="4-6 hours"
+  updated="2026-06-22"
+  outcomes={[
+    "解释 Agent 的目标、工具、状态和执行边界",
+    "区分普通聊天机器人和工具调用型 Agent",
+    "为一个任务型 Agent 设计日志与护栏"
+  ]}
+  formats={["概念课", "项目", "可视化", "教师指南"]}
+  primaryHref="/roadmap"
+  secondaryHref="/tasks"
+/>
 
 Agent 是带有目标、工具、上下文和执行边界的模型应用结构。好的 Agent 设计依赖清晰工具、状态管理和可观测性。
 
 ## 工程边界
 
 不要把 Agent 设计成万能聊天框。可靠的 Agent 应该通过明确工具访问内容、执行动作，并留下可追踪的执行记录。
+
+## 设计检查
+
+- 工具输入输出是否有明确 Schema？
+- 每一步执行是否能记录原因、参数和结果？
+- 失败时是否能安全停止或请求人工确认？

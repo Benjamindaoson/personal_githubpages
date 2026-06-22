@@ -5,6 +5,18 @@ audience:
   - developer-student
   - teacher
 level: intermediate
+status: ready
+estimated_time: 4-5 hours
+updated: "2026-06-22"
+product:
+  stage: builder
+  formats:
+    - lesson
+    - project
+    - visual
+    - teacher-guide
+  primary_cta: /courses/ai-engineering/modules/rag/lesson
+  secondary_cta: /tasks
 prerequisites:
   - llm-foundations
 learning_objectives:

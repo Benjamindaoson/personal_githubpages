@@ -2,10 +2,32 @@
 title: RAG 入门
 ---
 
-# RAG 入门
+import { CourseUnitHeader } from '@site/src/components/LearningProduct';
+
+<CourseUnitHeader
+  eyebrow="Builder"
+  title="RAG 入门"
+  status="已上线"
+  estimatedTime="4-5 hours"
+  updated="2026-06-22"
+  outcomes={[
+    "解释检索、上下文拼接和生成的职责边界",
+    "识别引用质量和幻觉风险的基本评测维度",
+    "设计一个课程资料问答链路"
+  ]}
+  formats={["概念课", "项目", "可视化", "教师指南"]}
+  primaryHref="/roadmap"
+  secondaryHref="/tasks"
+/>
 
 RAG 把外部知识检索和模型生成组合起来，使回答可以引用课程内容、文档或数据源。
 
 ## 最小心智模型
 
 一个 RAG 系统通常包含四步：把资料切片并建立索引，按用户问题检索相关片段，把片段组装进上下文，让模型基于上下文生成答案。
+
+## 工程关注点
+
+- 切片策略决定模型能看到什么粒度的证据。
+- 检索与重排决定上下文的相关性。
+- 引用与评测决定答案是否可追溯。
